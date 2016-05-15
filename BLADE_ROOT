@@ -1,0 +1,19 @@
+### cc_config for Blade compile system
+
+cc_config(
+    extra_incs = [
+        'thirdparty',
+    ],
+    cppflags = [
+        '-Wall', '-Wunused-function', '-Wunused-variable', '-Wunused-value',
+        '-fopenmp',
+        '-D_LARGE_FILE', '-D_FILE_OFFSET_BITS=64', '-DNOCUDA'
+    ],
+
+
+
+    linkflags = [
+        '-fopenmp',
+    ],
+)
+
